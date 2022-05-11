@@ -27,7 +27,7 @@ function App() {
 
   return (
     <div>
-      {/* {JSON.stringify(forecast)} */}
+      {JSON.stringify(forecast)}
       <ForecastMain forecast={forecast} />
     </div>
   );

@@ -12,8 +12,10 @@ import {
 import ExtendedForecast from "./ExtendedForecast";
 
 const ForecastMain = ({ forecast }) => {
-  const fiveDay = forecast.daily.slice(1, 6);
+  const fiveDay = forecast.daily?.slice(1, 6);
   const iconCode = forecast.current.weather[0].icon.slice(0, 2);
+  const d = new Date();
+  const today = d.getDate()
 
   return (
     <div>
@@ -36,8 +38,8 @@ const ForecastMain = ({ forecast }) => {
         </div>
         <div className="current-forecast-info--right"></div>
       </div>
-      {fiveDay.map((day) => (
-        <ExtendedForecast daysWeather={day} />
+      {fiveDay.map((day, i) => (
+        <ExtendedForecast daysWeather={day} index={i} />
       ))}
     </div>
   );
