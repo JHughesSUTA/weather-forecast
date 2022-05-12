@@ -1,0 +1,103 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;400;700&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  font-family: "Inter", sans-serif;
+  --blue: #65aed5;
+  --black: #4a4a4a;
+}
+
+body {
+  /* ff 3.6+ */
+  background: -moz-linear-gradient(
+    45deg,
+    rgba(17, 93, 163, 1) 0%,
+    rgba(78, 207, 237, 1) 100%
+  );
+
+  /* safari 5.1+,chrome 10+ */
+  background: -webkit-linear-gradient(
+    45deg,
+    rgba(17, 93, 163, 1) 0%,
+    rgba(78, 207, 237, 1) 100%
+  );
+
+  /* opera 11.10+ */
+  background: -o-linear-gradient(
+    45deg,
+    rgba(17, 93, 163, 1) 0%,
+    rgba(78, 207, 237, 1) 100%
+  );
+
+  /* ie 6-9 */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4ECFED', endColorstr='#115DA3', GradientType=1 );
+
+  /* ie 10+ */
+  background: -ms-linear-gradient(
+    45deg,
+    rgba(17, 93, 163, 1) 0%,
+    rgba(78, 207, 237, 1) 100%
+  );
+
+  /* global 94%+ browsers support */
+  background: linear-gradient(
+    45deg,
+    rgba(17, 93, 163, 1) 0%,
+    rgba(78, 207, 237, 1) 100%
+  );
+}
+
+.forecast-main {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.current-forecast-info {
+  background-image: url("images/dallas.png");
+  background-size: cover;
+}
+
+.current-forecast-info--left {
+  display: flex;
+}
+
+.weather-icon {
+  width: 45px;
+  height: 40px;
+}
+
+.primary-blue {
+  color: var(--blue);
+}
+
+#todays-temperature {
+  font-size: 3rem;
+}
+
+.current-weather-description {
+  font-size: 0.875rem;
+  font-weight: 100;
+}
+
+.extended-forecast {
+  color: var(--black);
+  border-bottom: 1px solid #d8d8d8;
+  text-align: center;
+  padding: 1.5em;
+  background-color: #ffffff;
+}
+
+.extended-forecast--day {
+  font-weight: bold;
+}
+
+.extended-forecast--icon {
+  margin: 0 auto;
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
